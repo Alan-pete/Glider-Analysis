@@ -1,0 +1,90 @@
+{
+    "components" : {
+        "MainWing" : {
+            "ID" : 1,
+            "type" : "symmetric_airfoil",
+            "side" : "both",
+            "connect_to" : {
+                "ID" : 0,
+                "location" : "tip",
+                "dx" :  0.0,
+                "dy" :  0.0,
+                "dz" :  0.0,
+                "y_offset" : 0.0
+            },
+            "density" : 0.025,
+            "semispan" : 4.5,
+            "dihedral" : 10.255,
+            "chord" : 0.75,
+            "thickness" : 0.12
+        },
+        "HorizontalStab" : {
+            "ID" : 2,
+            "type" : "symmetric_airfoil",  
+            "side" : "both",
+                "connect_to" : {
+                "ID" : 0,
+                "location" : "tip",
+                "dx" :  -1.9455,
+                "dy" :  0.0,
+                "dz" :  0.0,
+                "y_offset" : 0.0
+            },
+            "density" : 0.025,
+            "semispan" : 1.0,
+            "dihedral" : 0.0,
+            "chord" : 0.75,
+            "thickness" : 0.12
+        },
+        "VerticalStab" : {
+            "ID" : 3,
+            "type" : "symmetric_airfoil",  
+            "side" : "left",
+            "connect_to" : {
+                "ID" : 0,
+                "location" : "tip",
+                "dx" :  -3.348,
+                "dy" :  0.0,
+                "dz" :  0.0,
+                "y_offset" : 0.0
+            },
+            "density" : 0.025,
+            "semispan" : 1.0,
+            "dihedral" : 90.0,
+            "chord" : 0.75,
+            "thickness" : 0.12
+        },
+        "fuselage_shaft" : {
+            "ID" : 4,
+            "type" : "cylinder",  
+            "connect_to" : {
+                "ID" : 0,
+                "location" : "tip",
+                "dx" :  -0.348,
+                "dy" :  0.0,
+                "dz" :  0.0,
+                "y_offset" : 0.0
+            },
+            "density" : 0.75,
+            "radius" : 0.03125,
+            "hollow_radius" : 0.0234375,
+            "length" : 6.0
+        },
+        "tungsten_ballast" : {
+            "ID" : 5,
+            "type" : "cylinder",  
+            "connect_to" : {
+                "ID" : 0,
+                "location" : "tip",
+                "dx" :  0.71985,
+                "dy" :  0.0,
+                "dz" :  0.0,
+                "y_offset" : 0.0
+            },
+            "density" : 37.3,
+            "radius" : 0.0625,
+            "hollow_radius" : 0.03125,
+            "length" : 0.041667
+        }                   
+    }
+}

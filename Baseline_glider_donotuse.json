@@ -1,0 +1,105 @@
+{
+	"tag": {},
+	"simulation": {
+		"constant_density": false,
+		"time_step[sec]": 0.05,
+		"total_time[sec]": 250,
+		"ground_altitude[ft]": 4711
+	},
+	"aircraft": {
+		"wing_area[ft^2]": 6.75,
+		"wing_span[ft]": 9,
+		"weight[lbf]": 1.1009128798,
+		"Ixx[slug-ft^2]": 0.0707756,
+		"Iyy[slug-ft^2]": 0.05264092,
+		"Izz[slug-ft^2]": 0.11945926,
+		"Ixy[slug-ft^2]": 0,
+		"Ixz[slug-ft^2]": 0.00227187,
+		"Iyz[slug-ft^2]": 0,
+		"hx[slug-ft^2/s]": 0,
+		"hy[slug-ft^2/s]": 0,
+		"hz[slug-ft^2/s]": 0
+	},
+	"initial": {
+		"airspeed[ft/s]": 15.8573187870864,
+		"altitude[ft]": 4761,
+		"heading[deg]": 0,
+		"type": "state",
+		"state": {
+			"elevation_angle[deg]": 0,
+			"bank_angle[deg]": 0,
+			"alpha[deg]": 0,
+			"beta[deg]": 0,
+			"p[deg/s]": 0,
+			"q[deg/s]": 0,
+			"r[deg/s]": 0,
+			"aileron[deg]": 0,
+			"elevator[deg]": 0,
+			"rudder[deg]": 0,
+			"throttle": 0
+		}
+	},
+	"aerodynamics": {
+		"ground_effect": {
+			"use_ground_effect": true,
+			"taper_ratio": 1
+		},
+		"gust_magnitude[ft/s]": 2,
+		"stall": {
+			"use_stall_model": true,
+			"alpha_blend[deg]": 12.7,
+			"blending_factor": 40
+		},
+		"CL": {
+			"0": 0.632167282023632,
+			"alpha": 5.47271555777417,
+			"alpha_hat": 0.8646483519,
+			"qbar": 2.33794798761393,
+			"de": 0
+		},
+		"CS": {
+			"beta": -0.379259507617684,
+			"pbar": -0.3117073482467956,
+			"Lpbar": -0.05469982327456855,
+			"rbar": 0.350371385573037,
+			"da": 0,
+			"dr": 0
+		},
+		"CD": {
+			"L0": 0.01373737827378688,
+			"L": -0.007116413797661245,
+			"L2": 0.03874104369226941,
+			"S2": 1.4587860997110518,
+			"qbar": 0.051823461947640585,
+			"Lqbar": 0.160742615511802,
+			"L2qbar": -0.0720416847157212,
+			"de": 0,
+			"Lde": 0,
+			"de2": 0
+		},
+		"Cl": {
+			"beta": -0.142972543787414,
+			"pbar": -0.630845820666205,
+			"rbar": 0.10268433685189493,
+			"Lrbar": 0.27394300118283316,
+			"da": 0,
+			"dr": 0
+		},
+		"Cm": {
+			"0": -0.00398467683255545,
+			"alpha": -1.29421013907939,
+			"alpha_hat": -2.177299837,
+			"qbar": -9.7225187285533,
+			"de": 0
+		},
+		"Cn": {
+			"beta": 0.0851956315101946,
+			"pbar": 0.05166996340461108,
+			"Lpbar": -0.16237311283202954,
+			"rbar": -0.0796733481150116,
+			"da": 0,
+			"Lda": 0,
+			"dr": 0
+		}
+	}
+}
